@@ -1,0 +1,682 @@
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                list-style: none;
+                box-sizing: border-box;
+                min-height: 2000px;
+                max-width: 100%;
+                list-style-type: none;
+                header {
+                    height: 23rem;
+                    .navbar1 {
+                        height: 4rem;
+                        border-bottom: 1px ridge;
+                        .left-col1 {
+                            .left-icons {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                margin-left: 6rem;
+                                margin-top: 1rem;
+                                img {
+                                    width: 25px;
+                                    margin-right: 0.9rem;
+                                    &:nth-child(4) {
+                                        margin-right: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .right-col1 {
+                            .right-icons {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                margin-right: 4rem;
+                                .icon1,
+                                .icon2 {
+                                    padding-top: 1rem;
+                                    margin-left: 1rem;
+                                    img {
+                                        width: 24px;
+                                    }
+                                    span {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .logo {
+                        border-bottom: 1px ridge;
+                        height: 13rem;
+                        text-align: center;
+                        img {
+                            padding-top: 0.5rem;
+                            height: 170px;
+                            width: auto;
+                        }
+                    }
+                    .navbar2 {
+                        display: flex;
+                        border-bottom: 1px ridge;
+                        flex-wrap: nowrap;
+                        height: 6rem;
+                        position: relative;
+                        .left-col2 {
+                            .navbar-menu {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                flex-wrap: nowrap;
+                                .hamburger {
+                                    border: none;
+                                    background-color: transparent;
+                                    display: none;
+                                    margin-top: 1rem;
+                                    img {
+                                        width: 25px;
+                                    }
+                                    cursor: pointer;
+                                    & :focus {
+                                        outline: none;
+                                    }
+                                }
+                                .nav {
+                                    margin-top: 1.3rem;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-around;
+                                    flex-wrap: nowrap;
+                                    li :hover {
+                                        background-color: rgb(228, 224, 224);
+                                    }
+                                    a {
+                                        color: black;
+                                        font-weight: 400;
+                                        font-size: 27px;
+                                        margin-right: 4rem;
+                                        text-decoration: none;
+                                        &:nth-child(6) {
+                                            margin-right: 0rem;
+                                        }
+                                    }
+                                    .hover {
+                                        div {
+                                            position: relative;
+                                            img {
+                                                position: absolute;
+                                                left: 59%;
+                                                top: 28%;
+                                            }
+                                        }
+                                        .block {
+                                            display: none;
+                                            list-style: none;
+                                            border: 1px ridge;
+                                            height: 110px;
+                                            width: 13rem;
+                                            li {
+                                                width: 110px;
+                                                a {
+                                                    font-size: 24px;
+                                                    text-align: center;
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                        }
+                                        &:hover {
+                                            .block {
+                                                display: block;
+                                                position: absolute;
+                                                background-color: white;
+                                                margin-top: 4px;
+                                                margin-left: -49px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right-col2 {
+                            .bag {
+                                padding-top: 1rem;
+                                img {
+                                    width: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+                main {
+                    .text {
+                        font-family: "Montserrat", sans-serif;
+                        margin-top: 4rem;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        h1 {
+                            font-size: 70px;
+                            box-shadow: inset 0 -0.45em 0 #fcefcf;
+                            margin: 0rem 0.4rem;
+                        }
+                    }
+                    .content {
+                        margin: 6rem;
+                        .left-col {
+                            .leftbox {
+                                margin: 2rem 0rem;
+                                border-top: 1px solid rgb(180, 178, 178);
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                padding-top: 2.5rem;
+                                width: 54rem;
+                                .left {
+                                    .card {
+                                        border: none;
+                                        .card-body {
+                                            p {
+                                                font-size: 22px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .right {
+                                    padding-top: 1rem;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-around;
+                                    input {
+                                        width: 70px;
+                                        height: 70px;
+                                        text-align: center;
+                                        font-size: 22px;
+                                        border: 1px solid rgb(180, 178, 178);
+                                        border-radius: 5px;
+                                    }
+                                    button {
+                                        width: 35px;
+                                        height: 35px;
+                                        background-color: rgb(240, 238, 238);
+                                        border: 1px solid rgb(180, 178, 178);
+                                        font-size: 20px;
+                                        border-radius: 5px;
+                                    }
+                                    .text1 {
+                                        margin-left: 1rem;
+                                        padding: 0.7rem;
+                                        font-size: 25px;
+                                    }
+                                }
+                                .icon {
+                                    margin-top: 1.3rem;
+                                    margin-left: 1rem;
+                                    img {
+                                        width: 27px;
+                                    }
+                                }
+                            }
+                            .btn {
+                                border-top: 1px solid rgb(180, 178, 178);
+                                width: 54rem;
+                                padding-top: 2rem;
+                                input {
+                                    width: 300px;
+                                    height: 72px;
+                                    text-align: center;
+                                    font-size: 25px;
+                                    border: 1px solid rgb(180, 178, 178);
+                                    border-radius: 5px;
+                                    margin-right: 1rem;
+                                }
+                                button {
+                                    width: 240px;
+                                    height: 70px;
+                                    text-align: center;
+                                    font-size: 25px;
+                                    border: 1px solid rgb(206, 204, 204);
+                                    border-radius: 5px;
+                                    background-color: rgb(229, 226, 226);
+                                    &:hover {
+                                        background-color: rgb(219, 218, 218);
+                                    }
+                                }
+                            }
+                        }
+                        .right-col {
+                            margin-top: 6rem;
+                            height: 660px;
+                            position: sticky;
+                            border: 1px solid rgb(225, 222, 222);
+                            background-color: rgb(247, 246, 246);
+                            border-radius: 10px;
+                            .rightbox1 {
+                                height: 150px;
+                                height: 7rem;
+                                border-bottom: 1px solid rgb(180, 178, 178);
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                h3,
+                                p {
+                                    font-weight: 700;
+                                }
+                                p {
+                                    font-size: 25px;
+                                }
+                            }
+                            .rightbox2 {
+                                height: 280px;
+                                border-bottom: 1px solid rgb(180, 178, 178);
+                                padding-top: 2rem;
+                                h3,
+                                p {
+                                    font-weight: 700;
+                                }
+                                form {
+                                    padding-top: 1.5rem;
+                                    label {
+                                        font-size: 25px;
+                                    }
+                                }
+                                a {
+                                    color: black;
+                                    font-weight: 600;
+                                    font-size: 25px;
+                                    img {
+                                        width: 30px;
+                                    }
+                                }
+                            }
+                            .rightbox3 {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                height: 110px;
+                                border-bottom: 1px solid rgb(180, 178, 178);
+                                h3,
+                                p {
+                                    font-weight: 700;
+                                }
+                                p {
+                                    font-size: 25px;
+                                }
+                            }
+                            .rightbox4 {
+                                height: 120px;
+                                button {
+                                    width: 40rem;
+                                    height: 5.5rem;
+                                    margin-top: 2rem;
+                                    margin-left: 2.5rem;
+                                    border: 1px solid black;
+                                    border-radius: 5px;
+                                    background-color: black;
+                                    color: white;
+                                    font-size: 25px;
+                                    &:hover {
+                                        background-color: rgb(10, 141, 180);
+                                        border: 1px solid rgb(13, 174, 223);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                footer {
+                    margin-top: 6rem;
+                    .box1 {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        height: 370px;
+                        .item1 {
+                            background-image: url(../img/ace73779-62a7-4f51-ade7-e3355bf1a82c.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            width: 16.6%;
+                        }
+                        .item2 {
+                            background-image: url(../img/af4478ea-90eb-4965-af22-1262f1e785fa.jpg );
+                            background-position: center;
+                            background-size: cover;
+                            width: 16.6%;
+                        }
+                        .item3 {
+                            background-image: url(../img/3c79df5e-3ae4-4f58-beef-720f7c8036d6.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            width: 16.6%;
+                        }
+                        .item4 {
+                            background-image: url(../img/e4b944b3-16fb-4488-9e71-69b513eff19c.jpg );
+                            background-position: center;
+                            background-size: cover;
+                            width: 16.6%;
+                        }
+                        .item5 {
+                            background-image: url(../img/32a8315d-6d96-4796-985f-a8e8fc663cc6.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            width: 16.6%;
+                        }
+                        .item6 {
+                            background-image: url(../img/65c2768a-900f-4022-801a-ff3ce9d880f8.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            width: 16.6%;
+                        }
+                    }
+                    .box2 {
+                        margin-top: 3rem;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        ul {
+                            list-style: none;
+                            li {
+                                font-weight: 600;
+                                text-align: center;
+                                font-size: 20px;
+                                h4 {
+                                    font-family: "Montserrat", sans-serif;
+                                }
+                                a {
+                                    text-decoration: none;
+                                    color: black;
+                                }
+                                input {
+                                    border: 1px ridge;
+                                    width: 13rem;
+                                    height: 2.5rem;
+                                    margin-top: 1rem;
+                                }
+                                button {
+                                    background-color: black;
+                                    color: white;
+                                    border: 1px solid black;
+                                    padding: 0.3rem 1rem;
+                                    margin-top: 1rem;
+                                    font-size: 18px;
+                                    &:hover {
+                                        background-color: rgb(80, 150, 241);
+                                        border: 1px solid rgb(80, 150, 241);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .box3 {
+                        margin-top: 3rem;
+                        .left-col1 {
+                            p {
+                                padding-left: 4.5rem;
+                                font-size: 22px;
+                            }
+                        }
+                        .right-col1 {
+                            img {
+                                width: 450px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media only screen and (max-width: 600px) {
+                header {
+                    height: 16rem!important;
+                    .navbar1 {
+                        height: 3rem!important;
+                        .left-col1 {
+                            .left-icons {
+                                margin-left: 0rem!important;
+                                margin-top: 1rem!important;
+                                img {
+                                    width: 19px!important;
+                                    margin-right: 0.5rem!important;
+                                    &:nth-child(4) {
+                                        margin-right: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .right-col1 {
+                            .right-icons {
+                                justify-content: flex-start!important;
+                                margin-right: 0rem!important;
+                                .icon1 {
+                                    display: none!important;
+                                }
+                                .icon1,
+                                .icon2 {
+                                    padding-top: 0.7rem!important;
+                                    margin-left: 3rem!important;
+                                    img {
+                                        width: 20px!important;
+                                    }
+                                    span {
+                                        font-size: 16px!important;
+                                        vertical-align: middle!important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .logo {
+                        height: 9rem!important;
+                        img {
+                            height: 150px!important;
+                            width: 310px!important;
+                        }
+                    }
+                    .navbar2 {
+                        height: 4rem!important;
+                        position: relative;
+                        .left-col2 {
+                            border-right: 1px ridge!important;
+                            .navbar-menu {
+                                .hamburger {
+                                    border: none;
+                                    display: block!important;
+                                    margin-top: 1.1rem!important;
+                                    margin-right: 2.9rem!important;
+                                    img {
+                                        width: 31px!important;
+                                    }
+                                }
+                                .nav {
+                                    display: none!important;
+                                }
+                            }
+                        }
+                        .right-col2 {
+                            .bag {
+                                padding-top: 0.5rem!important;
+                                padding-left: 2.2rem!important;
+                                img {
+                                    width: 31px!important;
+                                }
+                            }
+                        }
+                    }
+                }
+                main {
+                    .text {
+                        font-family: "Montserrat", sans-serif;
+                        margin-top: 4rem;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        h1 {
+                            font-size: 70px;
+                            box-shadow: inset 0 -0.45em 0 #fcefcf;
+                            margin: 0rem 0.4rem;
+                        }
+                    }
+                    .content {
+                        margin: 4rem 0rem!important;
+                        .left-col {
+                            .leftbox {
+                                margin: 1rem 0rem!important;
+                                padding-top: 2rem!important;
+                                padding-left: 0rem!important;
+                                width: 22rem!important;
+                                .left {
+                                    .card {
+                                        img {
+                                            display: none!important;
+                                        }
+                                        .card-body {
+                                            p {
+                                                font-size: 16px!important;
+                                            }
+                                        }
+                                    }
+                                }
+                                .right {
+                                    flex-wrap: nowrap!important;
+                                    justify-content: flex-start!important;
+                                    .btn-box {
+                                        // display: flex!important;
+                                        // flex-direction: row!important;
+                                        // justify-content: flex-start!important;
+                                        input {
+                                            width: 65px!important;
+                                            height: 65px!important;
+                                            font-size: 25px!important;
+                                            border-radius: 3px!important;
+                                        }
+                                        button {
+                                            margin-top: 0.2rem!important;
+                                            margin-left: 0rem!important;
+                                            width: 25px!important;
+                                            height: 25px!important;
+                                            font-size: 13px!important;
+                                            border-radius: 1px!important;
+                                            &:nth-child(2) {
+                                                margin-left: 0.4rem!important;
+                                            }
+                                        }
+                                    }
+                                    .text1 {
+                                        margin: 0.5rem 0.4rem!important;
+                                        padding: 0.5rem!important;
+                                        font-size: 18px!important;
+                                    }
+                                    .icon {
+                                        margin-top: 1rem!important;
+                                        margin-left: 0rem!important;
+                                        img {
+                                            width: 18px!important;
+                                        }
+                                    }
+                                }
+                            }
+                            .btn {
+                                width: 22rem!important;
+                                padding-top: 2rem;
+                                input {
+                                    width: 300px!important;
+                                    height: 72px!important;
+                                    font-size: 25px!important;
+                                    margin-bottom: 1rem!important;
+                                }
+                                button {
+                                    width: 200px!important;
+                                    height: 60px!important;
+                                    font-size: 22px!important;
+                                }
+                            }
+                        }
+                        .right-col {
+                            width: 22rem!important;
+                            height: 550px!important;
+                            border-radius: 5px!important;
+                            .rightbox1 {
+                                height: 100px!important;
+                                p {
+                                    font-size: 18px!important;
+                                }
+                            }
+                            .rightbox2 {
+                                height: 250px!important;
+                                form {
+                                    padding-top: 0rem!important;
+                                    label {
+                                        font-size: 16px!important;
+                                    }
+                                }
+                                a {
+                                    font-size: 16px!important;
+                                    img {
+                                        width: 20px!important;
+                                    }
+                                }
+                            }
+                            .rightbox3 {
+                                height: 100px!important;
+                                p {
+                                    font-size: 18px!important;
+                                }
+                            }
+                            .rightbox4 {
+                                height: 100px!important;
+                                button {
+                                    width: 15rem!important;
+                                    height: 3.5rem!important;
+                                    margin-top: 1.2rem!important;
+                                    margin-left: 2.5rem;
+                                    font-size: 16px!important;
+                                }
+                            }
+                        }
+                    }
+                }
+                footer {
+                    margin-top: 3rem !important;
+                    .box1 {
+                        .item1,
+                        .item2,
+                        .item3,
+                        .item4,
+                        .item5,
+                        .item6 {
+                            width: 33.3% !important;
+                        }
+                    }
+                    .box2 {
+                        margin-top: 2rem !important;
+                        ul {
+                            li {
+                                font-size: 13px !important;
+                            }
+                        }
+                    }
+                    .box3 {
+                        margin-top: 1.5rem !important;
+                        .left-col1 {
+                            p {
+                                text-align: center !important;
+                                padding-left: 1rem!important;
+                                font-size: 13px !important;
+                            }
+                        }
+                        .right-col1 {
+                            display: flex !important;
+                            justify-content: center !important;
+                            img {
+                                width: 200px !important;
+                            }
+                        }
+                    }
+                }
+            }
